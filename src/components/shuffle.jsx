@@ -47,14 +47,21 @@ const Shuffle = () => {
               className="image-container"
             />
 
-            <button onClick={handlePreviousImage}>Précédent</button>
-            <button onClick={handleNextImage}>Suivant</button>
-            <p>{randomObject.description}</p>
+            <div className="buttons">
+              <button onClick={handlePreviousImage}>Précédent</button>
+              <button onClick={handleNextImage}>Suivant</button>
+            </div>
+            <div className="description">
+              <p>{randomObject.description}</p>
+            </div>
           </div>
         )}
-        <button onClick={handleRandomPick}>"Choisir au hasard"</button>
       </div>
       {displayMap && <Map data={randomIndex} />}
+      <div className="hasard">
+        <button onClick={handleRandomPick}>"Proposez moi autre chose"</button>
+        <button>return</button>
+      </div>
     </div>
   );
 };
