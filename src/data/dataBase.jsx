@@ -28,6 +28,36 @@ import Messange3 from "../assets/messanges/3.jpg";
 import Marsan1 from "../assets/mont de marsan/1.jpg";
 import Marsan2 from "../assets/mont de marsan/2.jpg";
 import Marsan3 from "../assets/mont de marsan/3.jpg";
+import Annecy1 from "../assets/Annecy/1.jpg";
+import Annecy2 from "../assets/Annecy/2.jpg";
+import Annecy3 from "../assets/Annecy/3.jpg";
+import Bastia1 from "../assets/Bastia/1.jpg";
+import Bastia2 from "../assets/Bastia/2.jpg";
+import Bastia3 from "../assets/Bastia/3.jpg";
+import Colmar1 from "../assets/Colmar/1.jpg";
+import Colmar2 from "../assets/Colmar/2.jpg";
+import Colmar3 from "../assets/Colmar/3.jpg";
+import Lyon1 from "../assets/Lyon/1.jpg";
+import Lyon2 from "../assets/Lyon/2.jpg";
+import Lyon3 from "../assets/Lyon/3.jpg";
+import Marseille1 from "../assets/Marseille/1.jpg";
+import Marseille2 from "../assets/Marseille/2.jpg";
+import Marseille3 from "../assets/Marseille/3.jpg";
+import Monaco1 from "../assets/Monaco/1.jpg";
+import Monaco2 from "../assets/Monaco/2.jpg";
+import Monaco3 from "../assets/Monaco/3.jpg";
+import Montbeliard1 from "../assets/Montbeliard/1.jpg";
+import Montbeliard2 from "../assets/Montbeliard/2.jpg";
+import Montbeliard3 from "../assets/Montbeliard/3.jpg";
+import Nice1 from "../assets/Nice/1.jpg";
+import Nice2 from "../assets/Nice/2.jpg";
+import Nice3 from "../assets/Nice/3.jpg";
+import Perpignan1 from "../assets/Perpignan/1.jpg";
+import Perpignan2 from "../assets/Perpignan/2.jpg";
+import Perpignan3 from "../assets/Perpignan/3.jpg";
+import PortoVecchio1 from "../assets/PortoVecchio/1.jpg";
+import PortoVecchio2 from "../assets/PortoVecchio/2.jpg";
+import PortoVecchio3 from "../assets/PortoVecchio/3.jpg";
 
 export const dataBase = [
   {
@@ -180,5 +210,147 @@ export const dataBase = [
     environnement: "montagne",
 
     budget: "abordable",
+  },
+  {
+    id: 11,
+    img1: Colmar1,
+    img2: Colmar2,
+    img3: Colmar3,
+    name: "Colmar",
+    coordonnees: { lat: 48.082571, lng: 7.351869 },
+    description:
+      "Colmar est une ville de la région Grand Est, au nord-est de la France, à proximité de la frontière avec l'Allemagne. Sa vieille ville est dotée de ruelles pavées, bordées d'édifices médiévaux à colombages ou du début de l'époque Renaissance. L'église gothique Saint-Martin, datant du XIIIe siècle, se trouve sur la place de la Cathédrale, en plein centre. La ville est située sur la route des vins d'Alsace, et les vignobles locaux sont spécialisés dans la production de vins de Riesling et de Gewürztraminer. ",
+    enfants: true,
+    ambiance: "detente",
+    environnement: "ville",
+    budget: "abordable",
+  },
+
+  {
+    id: 12,
+    img1: Montbeliard1,
+    img2: Montbeliard2,
+    img3: Montbeliard3,
+    name: "Montbeliard",
+    coordonnees: { lat: 47.513853, lng: 6.793886 },
+    description:
+      "Montbéliard est une commune de l'Est de la France, sous-préfecture du département du Doubs en région Bourgogne-Franche-Comté. Elle est située dans le nord-est de la Franche-Comté, à moins d'une vingtaine de kilomètres de la Suisse, aux portes du massif du Jura.",
+    enfants: true,
+    ambiance: "detente",
+    environnement: "montagne",
+    budget: "abordable",
+  },
+
+  {
+    id: 13,
+    img1: Lyon1,
+    img2: Lyon2,
+    img3: Lyon3,
+    name: "Lyon",
+    coordonnees: { lat: 45.757442, lng: 4.842336 },
+    description:
+      "Lyon, ville française de la région historique Rhône-Alpes, se trouve à la jonction du Rhône et de la Saône. Son centre témoigne de 2 000 ans d'histoire, avec son amphithéâtre romain des Trois Gaules, l'architecture médiévale et Renaissance du Vieux Lyon et la modernité du quartier de la Confluence sur la Presqu'île. Les Traboules, passages couverts entre les immeubles, relient le Vieux Lyon à la colline de La Croix-Rousse",
+    enfants: true,
+    ambiance: "soiree",
+    environnement: "ville",
+    budget: "abordable",
+  },
+  {
+    id: 14,
+    img1: Annecy1,
+    img2: Annecy2,
+    img3: Annecy3,
+    name: "Annecy",
+    coordonnees: { lat: 45.904664, lng: 6.123693 },
+    description:
+      "Annecy est une ville des Alpes située dans le sud-est de la France. C'est là que le lac d'Annecy se déverse dans le Thiou. Elle est réputée pour sa vieille ville avec ses rues pavées, ses canaux sinueux et ses maisons aux couleurs pastel. Surplombant la ville, le château médiéval d'Annecy, ancienne résidence des comtes de Genève, abrite un musée proposant des objets régionaux, tels que du mobilier alpin ou des œuvres religieuses, ainsi qu'une exposition sur l'histoire naturelle.",
+    enfants: true,
+    ambiance: "sport",
+    environnement: "campagne",
+    budget: "cher",
+  },
+  {
+    id: 15,
+    img1: Perpignan1,
+    img2: Perpignan2,
+    img3: Perpignan3,
+    name: "Perpignan",
+    coordonnees: { lat: 42.695215, lng: 2.888715 },
+    description:
+      "Perpignan est une ville du sud de la France. Elle est située à proximité de la côte méditerranéenne et de la frontière avec l'Espagne. Elle fut la capitale du royaume de Majorque au cours du XIIIe siècle, et son centre médiéval présente une importante influence catalane. Au sud de la vieille ville, l'immense palais des Rois de Majorque, d'architecture gothique et romane, est doté de remparts offrant une vue sur la côte.",
+    enfants: true,
+    ambiance: "detente",
+    environnement: "plage",
+    budget: "abordable",
+  },
+  {
+    id: 16,
+    img1: Marseille1,
+    img2: Marseille2,
+    img3: Marseille3,
+    name: "Marseille",
+    coordonnees: { lat: 43.282226, lng: 5.372393 },
+    description:
+      "Marseille, ville portuaire du sud de la France, est un carrefour du commerce et de l'immigration depuis sa fondation par les Grecs vers 600 av. J.-C. En son cœur se trouve le Vieux-Port où les pêcheurs vendent leurs prises sur le quai bordé de bateaux. La basilique Notre-Dame-de-la-Garde est une église romane d'inspiration byzantine. Les constructions modernes incluent notamment la Cité Radieuse, unité d'habitations conçue par Le Corbusier et la Tour CMA CGM de Zaha Hadid",
+    enfants: true,
+    ambiance: "sport",
+    environnement: "plage",
+    budget: "abordable",
+  },
+  {
+    id: 17,
+    img1: Nice1,
+    img2: Nice2,
+    img3: Nice3,
+    name: "Nice",
+    coordonnees: { lat: 43.719048, lng: 7.252122 },
+    description:
+      "Nice est la capitale du département des Alpes-Maritimes sur la Côte d'Azur. Elle est située sur le littoral de galets de la baie des Anges. Fondée par les Grecs puis prisée par l'élite européenne au XIXe siècle, la ville attire l'attention des artistes depuis longtemps. Le musée Henri Matisse est consacré au parcours artistique du peintre niçois. Le musée Marc Chagall abrite certaines des plus grandes œuvres religieuses de l'artiste auquel il doit son nom.",
+    enfants: true,
+    ambiance: "soiree",
+    environnement: "plage",
+    budget: "cher",
+  },
+  {
+    id: 18,
+    img1: Monaco1,
+    img2: Monaco2,
+    img3: Monaco3,
+    name: "Monaco",
+    coordonnees: { lat: 43.738532, lng: 7.416411 },
+    description:
+      "Monaco est une petite ville-État indépendante sur la côte méditerranéenne française connue pour ses casinos haut de gamme, son port de plaisance rempli de yachts et son prestigieux Grand Prix de Formule 1 qui a lieu dans les rues de Monaco une fois par an. Monte-Carlo, son principal quartier, abrite d'élégants casinos Belle Époque et la Salle Garnier, l'opéra. Il compte également de nombreux hôtels de luxe, des boutiques, des discothèques et des restaurants.",
+    enfants: true,
+    ambiance: "soiree",
+    environnement: "ville",
+    budget: "cher",
+  },
+  {
+    id: 19,
+    img1: Bastia1,
+    img2: Bastia2,
+    img3: Bastia3,
+    name: "Bastia",
+    coordonnees: { lat: 42.692435, lng: 9.443241 },
+    description:
+      "Bastia est une ville corse. Son vieux port est bordé de bars et de restaurants, et l'église Saint-Jean-Baptiste se dresse juste derrière, avec ses deux campaniles. Terra Nova, citadelle vieille de plusieurs siècles et dotée de remparts, a été construite par des gouverneurs de Gênes. Non loin de là se trouve la cathédrale Sainte-Marie, ornée de peintures et statues de marbre. Le palais des gouverneurs abrite le musée de Bastia qui retrace l'histoire de la ville.",
+    enfants: true,
+    ambiance: "soiree",
+    environnement: "plage",
+    budget: "cher",
+  },
+  {
+    id: 20,
+    img1: PortoVecchio1,
+    img2: PortoVecchio2,
+    img3: PortoVecchio3,
+    name: "PortoVecchio",
+    coordonnees: { lat: 41.588395, lng: 9.273359 },
+    description:
+      "Porto-Vecchio est une ville portuaire située en Corse, une île rattachée à la France. Les murs d'une citadelle génoise du XVIe siècle servent de toile de fond à la vieille ville et offrent une vue sur la marina et ses yachts. Des boutiques, des bars et des restaurants bordent les rues étroites de la ville et la place principale, la place de la République. Parmi les plages célèbres situées non loin, il est possible de citer Palombaggia et son étendue de sable entourée de pins, ou encore Santa Giulia, dont les eaux rappellent celles d'un lagon. ",
+    enfants: true,
+    ambiance: "detente",
+    environnement: "plage",
+    budget: "cher",
   },
 ];
