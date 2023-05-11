@@ -1,5 +1,3 @@
 export const Homepage = () => {
-    return (
-        <div> Salut </div>
-    )
-}
+  return <div> Salut</div>;
+};
