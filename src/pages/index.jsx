@@ -1,3 +1,6 @@
+import { dataBase } from "../data/dataBase";
+
 export const Homepage = () => {
-  return <div> Salut</div>;
+  const ville = dataBase[0];
+  return <div> Salutttttt, {ville.name} </div>;
 };
