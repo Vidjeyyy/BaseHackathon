@@ -32,9 +32,9 @@ import Marsan3 from "../assets/mont de marsan/3.jpg";
 export const dataBase = [
   {
     id: 1,
-    img1: { Bdx1 },
-    img2: { Bdx2 },
-    img3: { Bdx3 },
+    img1: Bdx1,
+    img2: Bdx2,
+    img3: Bdx3,
     name: "Bordeaux",
     coordonnees: { lat: 44.837614504104465, lng: -0.579185013363845 },
     description:
@@ -46,9 +46,9 @@ export const dataBase = [
   },
   {
     id: 2,
-    img1: { Marsan1 },
-    img2: { Marsan2 },
-    img3: { Marsan3 },
+    img1: Marsan1,
+    img2: Marsan2,
+    img3: Marsan3,
     name: "Mont de Marsan",
     coordonnees: { lat: 43.89347256941558, lng: -0.4978544156884237 },
     description:
@@ -60,9 +60,9 @@ export const dataBase = [
   },
   {
     id: 3,
-    img1: { Messange1 },
-    img2: { Messange2 },
-    img3: { Messange3 },
+    img1: Messange1,
+    img2: Messange2,
+    img3: Messange3,
     name: "Messange",
     coordonnees: { lat: 43.81437838602471, lng: -1.3769926420197578 },
     description:
@@ -74,9 +74,9 @@ export const dataBase = [
   },
   {
     id: 4,
-    img1: { Hossegor1 },
-    img2: { Hossegor2 },
-    img3: { Hossegor3 },
+    img1: Hossegor1,
+    img2: Hossegor2,
+    img3: Hossegor3,
     name: "Hossegor",
     coordonnees: { lat: 43.664954733523466, lng: -1.3989637909898074 },
     description:
@@ -90,9 +90,9 @@ export const dataBase = [
   },
   {
     id: 5,
-    img1: { Biarritz1 },
-    img2: { Biarritz2 },
-    img3: { Biarritz3 },
+    img1: Biarritz1,
+    img2: Biarritz2,
+    img3: Biarritz3,
     name: "Biarritz",
     coordonnees: { lat: 43.48315465883768, lng: -1.5576708859206716 },
     description:
@@ -106,9 +106,9 @@ export const dataBase = [
   },
   {
     id: 6,
-    img1: { Gourette1 },
-    img2: { Gourette2 },
-    img3: { Gourette3 },
+    img1: Gourette1,
+    img2: Gourette2,
+    img3: Gourette3,
     name: "Gourette",
     coordonnees: { lat: 42.95927408783069, lng: -0.3301367813182192 },
     description:
@@ -121,9 +121,9 @@ export const dataBase = [
   },
   {
     id: 7,
-    img1: { Agen1 },
-    img2: { Agen2 },
-    img3: { Agen3 },
+    img1: Agen1,
+    img2: Agen2,
+    img3: Agen3,
     name: "Agen",
     coordonnees: { lat: 44.203007881009015, lng: 0.615433540959982 },
     description:
@@ -136,9 +136,9 @@ export const dataBase = [
   },
   {
     id: 8,
-    img1: { Pau1 },
-    img2: { Pau2 },
-    img3: { Pau3 },
+    img1: Pau1,
+    img2: Pau2,
+    img3: Pau3,
     name: "Pau",
     coordonnees: { lat: 43.29552541671863, lng: -0.3704189380286433 },
     description:
@@ -151,9 +151,9 @@ export const dataBase = [
   },
   {
     id: 9,
-    img1: { Hostens1 },
-    img2: { Hostens2 },
-    img3: { Hostens3 },
+    img1: Hostens1,
+    img2: Hostens2,
+    img3: Hostens3,
     name: "Hostens",
     coordonnees: { lat: 44.49336934645492, lng: -0.6389328256756519 },
     description:
@@ -167,9 +167,9 @@ export const dataBase = [
   },
   {
     id: 10,
-    img1: { Laruns1 },
-    img2: { Laruns2 },
-    img3: { Laruns3 },
+    img1: Laruns1,
+    img2: Laruns2,
+    img3: Laruns3,
     name: "Laruns",
     coordonnees: { lat: 42.99076945287421, lng: -0.42631291280662154 },
     description:
