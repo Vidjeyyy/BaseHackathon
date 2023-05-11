@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { dataBase } from "../data/dataBase";
 import "./login/randomPage.scss";
 import Map from "./map";
+import Form from "../components/Form"
 import "./map.scss";
 
 const Shuffle = () => {
@@ -35,7 +36,10 @@ const Shuffle = () => {
       setCurrentImageIndex(currentImageIndex + 1);
     }
   };
+  
 
+  const handleButtonClick = () => {
+    setShowForm(!showForm);
   return (
     <div>
       <div className="shuffle">
@@ -55,8 +59,9 @@ const Shuffle = () => {
         <button onClick={handleRandomPick}>"Choisir au hasard"</button>
       </div>
       {displayMap && <Map data={randomIndex} />}
+    
     </div>
   );
 };
-
+}
 export default Shuffle;
