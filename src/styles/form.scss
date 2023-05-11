@@ -1,4 +1,6 @@
-* {
+@import "./variables";
+
+*{
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -8,154 +10,280 @@
     display:flex;
     flex-direction: column;
     align-items: center;
-    background-color:#FEFCFC ;
+    background-color:$primary-color ;
 
     .form-header {
-        background-color: pink;
+        
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         margin-top:20px;
-        margin-bottom:60px;
-        width:950px;
+        margin-bottom:50px;
+        width:1100px;
         flex-wrap: wrap;
 
         .form-title {
-            background-color: red;
+            
             font-size: 35px;
+            margin-bottom: 30px;
+            font-family: $font;
         }
         .form-p {
             font-size: 30px;
+            font-family: $font;
+            
+           
         }
     }
 
     .form-body {
+        width:1180px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         
-        width:850px;
 
-        
         .form-line-1 {
+            width:1200px;
+            margin-top: 30px;            
+            display:flex;
+            flex-direction: column;
+            justify-content: center;  
+            margin-bottom: 50px;
+            height:100px;
             
-            width:1000px;
-            
-            margin-bottom: 30px;
-            label {
+            .form-line-1-label {
+                
+                font-family: $font;
                 font-size: 25px;
-                font-weight: bold;  
+                font-weight: bold; 
+                width:80vw;
+
+                .prenom {  
+                    margin-right:500px;
+                    margin-left: 60px;
+                }
             }
-            input {
-               width:300px;
-               background-color: white;
-               
-               font-size:25px;
-               border-radius: 5px;
-               border:1px solid #ccc;
-               -webkit-box-shadow: 3px 5px 8px -2px #000000;
-               box-shadow: 3px 5px 8px -2px lightgray;
-               text-indent:10px;
-               margin-left:20px;
-               margin-right: 20px;
+            
+            .form-line-1-input {
+                display: flex;
+                justify-content: space-around;
+
+                input {
+                    width:500px;
+                    background-color: white;
+                    height:60px;
+                    font-size:25px;
+                    font-family: $font;
+                    border-radius: 10px;
+                    border:1px solid #101010;
+                    -webkit-box-shadow: 3px 5px 8px -2px #000000;
+                    box-shadow: 3px 5px 8px -2px lightgray;
+                    text-indent:10px;
+                }
             }
         }
 
         .form-line-2 {
             
-            width:1000px;
-            
-            margin-bottom: 30px;
-            label {
-                font-size: 25px;
-                font-weight: bold;  
-            }
-            input {
-                background-color: white;
-                width:300px;
-                font-size:25px;
-                border-radius: 5px;
-                border:1px solid #ccc;
-                -webkit-box-shadow: 3px 5px 8px -2px #000000;
-                box-shadow: 3px 5px 8px -2px lightgray;
-                text-indent:10px;
-                margin-left:20px;
-                margin-right: 20px;
-            }
-        }
-        .form-line-3 {
+            width:1200px;
             display:flex;
-            align-items: center;
-            justify-content: flex-start;
-            width:1000px;
-            height:60px;
-            margin-bottom: 30px;
-            label {
+            flex-direction: column;
+            justify-content: center; 
+            margin-bottom: 50px;
+            height:100px;
+
+            
+            .form-line-2-label {
+                font-family: $font;
                 font-size: 25px;
-                font-weight: bold;  
+                font-weight: bold;
+                background-color: $primary-color;
+                width:80vw; 
+
+                .mail {
+                    margin-left: 60px;
+                    margin-right: 540px;
+                }
+             
             }
-            textarea {
-                background-color: white;
-                width:600px;
-                font-size:25px;
-                border-radius: 5px;
-                border:1px solid #ccc;
-                -webkit-box-shadow: 3px 5px 8px -2px #000000;
-                box-shadow: 3px 5px 8px -2px lightgray;
-                text-indent:10px;
-                margin-left:20px;
-                margin-right: 20px;
+           
+            .form-line-2-input {
+                display:flex;
+                justify-content: space-around;
+
+                input {
+                    width:500px;
+                    background-color: white;
+                    height:60px;
+                    font-size: 25px;
+                    font-family: $font;
+                    border-radius: 10px;
+                    border:1px solid #101010;
+                    -webkit-box-shadow: 3px 5px 8px -2px #000000;
+                    box-shadow: 3px 5px 8px -2px lightgray;
+                    text-indent:10px;
+                }
             }
         }
+
+
+
+
+        .form-line-3 {
+            width:1200px;
+            display:flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 50px;
+            height:120px;
+           
+            .form-line-3-label {
+                width:1200px;
+                font-family: $font;
+                font-size: 25px;
+                font-weight: bold; 
+                width:80vw;
+                margin-left: -70px;
+
+                .adress {
+                    margin-left: 10px;
+                }
+                
+            }
+
+            .form-line-3-textarea {
+                background-color: white;
+                width:1100px;
+                font-size:25px;
+                font-family: $font;
+                height:80px;
+                
+               
+                #textarea {
+                    width:1080px;
+                    height:60px;
+                    text-indent:10px;
+                    font-size: 25px;
+                    border-radius: 10px;
+                    border:1px solid #101010;
+                    -webkit-box-shadow: 3px 5px 8px -2px #000000;
+                    box-shadow: 3px 5px 8px -2px lightgray;
+                    text-indent:10px;
+                   
+                }
+            }
+        }
+
         .form-line-4 {
             
-            width:950px;
-            margin-bottom: 30px;
-            flex-wrap: wrap;
-            label {
+            width:1200px;
+            display:flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            
+            
+            .form-line-4-label {
                 font-size: 25px;
-                font-weight: bold;  
+                font-weight: bold; 
+                font-family: $font;
+                width:1100px;
+                
+                .number {
+                    margin-right: 170px;
+                    margin-left: 50px;
+                }
+                .expiration {
+                    margin-right: 170px;
+                }                
             }
-            input {
-                background-color: white;
-                width:300px;
-                font-size:15px;
-                border-radius: 5px;
-                border:1px solid #ccc;
-                -webkit-box-shadow: 3px 5px 8px -2px #000000;
-                box-shadow: 3px 5px 8px -2px lightgray;
-                text-indent:10px;
-                margin-left:15px;
-                margin-right: 15px;
-            }
-            #numero-carte {
-                width:200px;
-            }
-            #date-expiration {
-                width:70px;
-            }
-            #ccv {
-                width:100px;
+            .form-line-4-input {
+                width:1100px;
+                display: flex;
+                justify-content: space-around;
+                #numero-carte {
+                    width:250px;
+                    height:60px;
+                    margin-right: 50px;
+                    background-color: white;
+                    font-size:15px;
+                    font-family: $font;
+                    border-radius: 10px;
+                    border:1px solid #101010;
+                    -webkit-box-shadow: 3px 5px 8px -2px #000000;
+                    box-shadow: 3px 5px 8px -2px lightgray;
+                    text-indent:10px;
+                }
+                #date-expiration {
+                    width:250px;
+                    height:60px;
+                    margin-right: 50px;
+                    background-color: white;
+                    font-size:15px;
+                    font-family: $font;
+                    border-radius: 10px;
+                    border:1px solid #101010;
+                    -webkit-box-shadow: 3px 5px 8px -2px #000000;
+                    box-shadow: 3px 5px 8px -2px lightgray;
+                    text-indent:10px;
+                }
+                #ccv {
+                    width:250px;
+                    height:60px;
+                    margin-left:10px;
+                    font-size:15px;
+                    font-family: $font;
+                    border-radius: 10px;
+                    border:1px solid #101010;
+                    -webkit-box-shadow: 3px 5px 8px -2px #000000;
+                    box-shadow: 3px 5px 8px -2px lightgray;
+                    text-indent:10px;
+                }
             }
         }
     }
 
-    .form-submit {
-        margin-top: 40px;
+    .form-buttons {
+        margin-top: 80px;
         display: flex;
         flex-direction: row;
-        justify-content: center;
-        width:950px;
-        font-size: 25px;
+        justify-content: space-evenly;
+      
+        width:1280px;
+        background-color:$primary-color;
+        
 
-        #form-button {
+       #form-button-return {
             box-sizing: border-box;
-            position: absolute;
-            width: 103px;
-            height: 40px;
+            
+            width: 250px;
+            height: 60px;
+            font-family: $font;
+            font-size: 35px;
             font-weight: bold;
-            font-size: large;
-            background: #FFBFDC;
+            background: $bttn-color-pnk;
             border: 1px solid ;
             border-radius: 25px;
+            box-shadow: 3px 5px 8px -2px lightgray;
+       }
+       
+        #form-button-validate {
+            box-sizing: border-box;
+            
+            width: 250px;
+            height: 60px;
+            font-family: $font;
+            font-size: 35px;
+            font-weight: bold;
+            background: $bttn-color-grn;
+            border: 1px solid ;
+            border-radius: 25px;
+            box-shadow: 3px 5px 8px -2px lightgray;
+            
         }
     }
 };
