@@ -7,7 +7,7 @@ export const Homepage = () => {
   return (
     <div>
       <Shuffle />
-      <Form />
+    
     </div>
   )
 };
