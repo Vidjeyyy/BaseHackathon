@@ -1,3 +1,6 @@
+import Form from '../components/Form.jsx'
 export const Homepage = () => {
-  return <div> Salut</div>;
+  return  (
+    <Form />
+  );
 };
