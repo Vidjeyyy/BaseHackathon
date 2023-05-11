@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { dataBase } from "../data/dataBase";
 import "./login/randomPage.scss";
 import Map from "./map";
+import Form from "../components/Form";
 import "./map.scss";
 
 const Shuffle = () => {
@@ -36,34 +37,36 @@ const Shuffle = () => {
     }
   };
 
-  return (
-    <div>
-      <div className="shuffle">
-        {randomObject && (
-          <div className="carousel">
-            <img
-              src={randomObject["img" + [currentImageIndex + 1]]}
-              alt="Object"
-              className="image-container"
-            />
+  const handleButtonClick = () => {
+    setShowForm(!showForm);
+    return (
+      <div>
+        <div className="shuffle">
+          {randomObject && (
+            <div className="carousel">
+              <img
+                src={randomObject["img" + [currentImageIndex + 1]]}
+                alt="Object"
+                className="image-container"
+              />
 
-            <div className="buttons">
-              <button onClick={handlePreviousImage}>Précédent</button>
-              <button onClick={handleNextImage}>Suivant</button>
+              <div className="buttons">
+                <button onClick={handlePreviousImage}>Précédent</button>
+                <button onClick={handleNextImage}>Suivant</button>
+              </div>
+              <div className="description">
+                <p>{randomObject.description}</p>
+              </div>
             </div>
-            <div className="description">
-              <p>{randomObject.description}</p>
-            </div>
-          </div>
-        )}
+          )}
+        </div>
+        {displayMap && <Map data={randomIndex} />}
+        <div className="hasard">
+          <button onClick={handleRandomPick}>"Proposez moi autre chose"</button>
+          <button>return</button>
+        </div>
       </div>
-      {displayMap && <Map data={randomIndex} />}
-      <div className="hasard">
-        <button onClick={handleRandomPick}>"Proposez moi autre chose"</button>
-        <button>return</button>
-      </div>
-    </div>
-  );
+    );
+  };
 };
-
 export default Shuffle;
