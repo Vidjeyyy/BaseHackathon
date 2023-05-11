@@ -1,7 +1,12 @@
 import { dataBase } from "../data/dataBase";
-import HomePage from "../components/HomePage";
+import Carousel from "../components/login/randomPage";
+import Shuffle from "../components/shuffle";
+import Map from "../components/map";
 
 export const Homepage = () => {
-  const ville = dataBase[0];
-  return <div> <HomePage /> </div>;
+  return (
+    <div>
+      <Shuffle />
+    </div>
+  );
 };
