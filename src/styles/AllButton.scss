@@ -1,0 +1,18 @@
+@import "./variables";
+
+* {
+    font-family: $font;
+    color: $text-bttn-color;
+}
+
+.popupBttn {
+    box-sizing: border-box;
+    position: absolute;
+    width: 103px;
+    height: 40px;
+    font-weight: bold;
+    font-size: large;
+    background: #FFBFDC;
+    border: 1px solid $border-color;
+    border-radius: 25px;
+}
