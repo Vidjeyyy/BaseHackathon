@@ -93,9 +93,6 @@ function Form() {
       </div>
 
       <div className="form-buttons">
-        <button type="submit" id="form-button-return">
-          Annuler
-        </button>
         <button type="submit" id="form-button-validate">
           Réserver
         </button>
