@@ -18,14 +18,16 @@
 
   .buttons{
       display: flex;
-      width: 20vw;
+      width: 30vw;
       justify-content: space-between;
       margin-top: 2vh;
       box-sizing: border-box;
+      gap: 100px;
       .btn1{
          font-family: "Karla";
-         width: 100px;
-      font-size: 15px;
+         width: 120px;
+         height: 30px;
+      font-size: 20px;
       font-weight: bold;
       background: #FFBFDC;
       border: 1px solid ;
@@ -135,17 +137,17 @@
   gap:300px;
 }
  .hasard3{
-  margin-left: 28vw;
+  margin-left: 18vw;
       display: flex;
       align-items: center;
       
-      gap:300px;
+      gap:200px;
       .btn1 {
         box-sizing: border-box;
-        width: 10vw;
-        height:40px;
+        width: 25vw;
+        height:50px;
         font-family: "Karla";
-        font-size: 15px;
+        font-size: 20px;
         font-weight: bold;
         background: #FFBFDC;
         border: 1px solid ;
@@ -154,11 +156,11 @@
       }
       .btn2{
         box-sizing: border-box;
-        width: 10vw;
-       height: 40px;
+        width: 25vw;
+       height: 50px;
         
         font-family: "Karla";
-        font-size: 15px;
+        font-size: 25px;
         font-weight: bold;
         background: #76D3C8;
         border: 1px solid ;
