@@ -88,5 +88,40 @@
         
    
  }
+ 
+ .hasard2{
+  display: flex;  
+      justify-content: space-between;
+      width: 40vw;
+      margin: 5vh 0px ;
+      margin-left: 30vw;
+      .btn1 {
+        box-sizing: border-box;
+        width: 10vw;
+        
+        font-family: "Karla";
+        font-size: 15px;
+        font-weight: bold;
+        background: #FFBFDC;
+        border: 1px solid ;
+        border-radius: 25px;
+        box-shadow: 3px 5px 8px -2px lightgray;
+      }
+      .btn2{
+        box-sizing: border-box;
+        width: 10vw;
+        
+        font-family: "Karla";
+        font-size: 15px;
+        font-weight: bold;
+        background: #76D3C8;
+        border: 1px solid ;
+        border-radius: 25px;
+        box-shadow: 3px 5px 8px -2px lightgray;
+        false{
+          background: #eb2e2e;
+        }
+      }
+ }
     
 
