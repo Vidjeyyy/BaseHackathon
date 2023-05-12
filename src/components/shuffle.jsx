@@ -76,17 +76,18 @@ const Shuffle = () => {
 
       {showForm && <Form />}
 
-      {!showForm && (
-        <div className="hasard">
+      
+        <div className={showForm?"hasard3" : "hasard" }>
+        {!showForm && (
           <button className="btn1" onClick={handleRandomPick}>
             "Proposez moi autre chose"
-          </button>
+          </button>)}
 
-          <button className="btn2" onClick={handleButtonClick}>
-            {showForm ? "Hide Form" : "Show-Form"}
+          <button className={showForm?"btn3" : "btn2" } onClick={handleButtonClick}>
+            {showForm ? "Annuler" : "Show-Form"}
           </button>
         </div>
-      )}
+      
     </div>
   );
 };

@@ -83,10 +83,30 @@
         box-shadow: 3px 5px 8px -2px lightgray;
         false{
           background: #eb2e2e;
-        }
+        }}
+        
+      }
+      .hasard3{
+        position: absolute;
+        left: 24vw;
+        bottom:9vh;
+        
+        .btn3{
+          box-sizing: border-box;
+            
+            width: 250px;
+            height: 60px;
+            font-family: "Karla";
+            font-size: 35px;
+            font-weight: bold;
+            background: #FFBFDC;
+            border: 1px solid ;
+            border-radius: 25px;
+            box-shadow: 3px 5px 8px -2px lightgray;
+            }
       }
         
    
- }
+ 
     
 
