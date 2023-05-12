@@ -1,16 +1,16 @@
 
     .image-container{
         object-fit: cover;
-        height: 40vh;
+        height: 15vh;
         width: 20vw;
     }
     
     .map-container {
         margin-left: 25%;
-        margin-top: 30%;
+        margin-top: 5vh;
     
         width: 50%;
-        height: 40vh;
+        height: 30vh;
         z-index: 0;
       
         .marker {
