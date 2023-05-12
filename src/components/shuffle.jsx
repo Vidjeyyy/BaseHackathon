@@ -79,9 +79,11 @@ const Shuffle = () => {
       
         <div className={showForm?"hasard3" : "hasard" }>
         {!showForm && (
+      
+        <div className={displayMap ? " hasard2" : "hasard"}>
           <button className="btn1" onClick={handleRandomPick}>
             "Proposez moi autre chose"
-          </button>)}
+          </button></div>)}
 
           <button className={showForm?"btn3" : "btn2" } onClick={handleButtonClick}>
             {showForm ? "Annuler" : "Show-Form"}
