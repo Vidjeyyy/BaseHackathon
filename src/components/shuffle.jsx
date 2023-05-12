@@ -4,6 +4,8 @@ import "./login/randomPage.scss";
 import Map from "./map";
 import Form from "../components/Form";
 import "./map.scss";
+import "../styles/form.scss";
+import HomePage from "../components/HomePage";
 
 const Shuffle = () => {
   const [randomObject, setRandomObject] = useState(null);
@@ -36,11 +38,14 @@ const Shuffle = () => {
       setCurrentImageIndex(currentImageIndex + 1);
     }
   };
-
+  const [showForm, setShowForm] = useState(false);
   const handleButtonClick = () => {
     setShowForm(!showForm);
-    return (
-      <div>
+  };
+  return (
+    <div>
+      {!randomObject && <HomePage />}
+      {!showForm && (
         <div className="shuffle">
           {randomObject && (
             <div className="carousel">
@@ -51,8 +56,12 @@ const Shuffle = () => {
               />
 
               <div className="buttons">
-                <button onClick={handlePreviousImage}>Précédent</button>
-                <button onClick={handleNextImage}>Suivant</button>
+                <button className="btn1" onClick={handlePreviousImage}>
+                  Précédent
+                </button>
+                <button className="btn1" onClick={handleNextImage}>
+                  Suivant
+                </button>
               </div>
               <div className="description">
                 <p>{randomObject.description}</p>
@@ -60,13 +69,26 @@ const Shuffle = () => {
             </div>
           )}
         </div>
-        {displayMap && <Map data={randomIndex} />}
+      )}
+      {!showForm && (
+        <div className="map">{displayMap && <Map data={randomIndex} />}</div>
+      )}
+
+      {showForm && <Form />}
+
+      {!showForm && (
         <div className="hasard">
-          <button onClick={handleRandomPick}>"Proposez moi autre chose"</button>
-          <button>return</button>
+          <button className="btn1" onClick={handleRandomPick}>
+            "Proposez moi autre chose"
+          </button>
+
+          <button className="btn2" onClick={handleButtonClick}>
+            {showForm ? "Hide Form" : "Show-Form"}
+          </button>
         </div>
-      </div>
-    );
-  };
+      )}
+    </div>
+  );
 };
+
 export default Shuffle;
